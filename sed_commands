@@ -1,0 +1,2 @@
+$a# adding a path for LSC
+$aexport PATH="$PATH:/usr/local/bin/lsc"
