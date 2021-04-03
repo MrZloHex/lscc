@@ -2,7 +2,7 @@
 
 while [[ $key != "q" ]]
 do
-	ls
+	lsattr
 	read -s -n 1 key
 	clear
 done

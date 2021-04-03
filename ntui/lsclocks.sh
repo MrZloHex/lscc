@@ -1,8 +1,8 @@
 #!/bin/sh
 
 while [[ $key != "q" ]]
-do
-	ls
+do 
+	lslocks
 	read -s -n 1 key
 	clear
 done

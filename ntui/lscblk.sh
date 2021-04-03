@@ -2,7 +2,7 @@
 
 while [[ $key != "q" ]]
 do
-	ls
+	lsblk
 	read -s -n 1 key
 	clear
 done

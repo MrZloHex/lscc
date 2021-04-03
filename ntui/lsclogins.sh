@@ -2,7 +2,7 @@
 
 while [[ $key != "q" ]]
 do
-	ls
-	read -s -n 1 key
+	lsclogins
+	read -s -n key
 	clear
 done

@@ -4,6 +4,6 @@ cd ..
 rm -rf lsc
 
 cd /usr/local/bin
-sudo rm lsc lscirq lscusb lscipc
+sudo rm lsc lscattr lscblk lsccpu lscinitcpio lsclocks lsclogins lscmem lscns lscirq lscusb lscipc 
 
 echo "DONE!"
