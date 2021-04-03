@@ -17,7 +17,7 @@ And enter you password. This will __install__ commands.
 ## Unistallation
 
 To uninstall all go to cloned directory and run:
-`~/lsc >>> ./uninstall.sh
+`~/lsc >>> ./uninstall.sh`
 And enter you password. LSC will be __uninstalled__ from you computer.
 
 ## Usage
