@@ -6,7 +6,11 @@
 #sed -i -e '$a# adding a path for LSC\nexport PATH="$PATH:/usr/local/bin/lsc"' $HOME/.$my_shell"rc"
 #source $HOME/.$my_shell"rc"
 
-cd ntui
+
+
+## INSTALLING COMMANDS
+
+cd ntui/com
 
 # changing extention
 for f in *.sh
@@ -23,7 +27,27 @@ done
 
 cd ..
 
+
+
+## INSTALLING MAN PAGES
+
+sudo mkdir /usr/local/man/man1
+
+cd man
+
+for f in *
+do
+	sudo mv "$f" /usr/local/man/man1
+	sudo gzip /usr/local/man/man1/$f
+done
+
+sudo mandb
+
+cd ..
+cd ..
+
 rm -rf ntui
+
 
 echo "DONE!"
 
