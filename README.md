@@ -8,6 +8,8 @@ All commands are the same as standart but have letter C after ls.
 E.g. lsc | lscusb | lscirq | lscipc
 Well Use!
 
+Functions have manpages!
+
 ## Installation
 
 Clone or download and unzip this repo, then please run:
