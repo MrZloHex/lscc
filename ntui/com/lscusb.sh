@@ -28,7 +28,17 @@ do
 	case "${flag}" in
 		v) call_function v
 			;;
-		*) echo "FLAGS"
+		s) call_function s ${OPTARG}
+			;;
+		d) call_function d ${OPTARG}
+			;;
+		D) call_function D
+			;;
+		t) call_function t
+			;;
+		V) call_function V ${OPTARG}
+			;;
+		\?) call_function
 			;;
 	esac
 done
