@@ -1,11 +1,32 @@
 #!/bin/bash
 
-# taking flags and options
+# calling function
+call_function()
+{
+	# arguments of function
+	opt=$1
+	arg=$2
+	
+	while [[ $key != "q" ]]
+	do
+		if [[ $arg = "" ]]
+		then
+			lsusb -$opt
+		else
+			lsusb -$opt $arg
+		fi
 
+		read -s -n 1 key
+		clear
+	done
+}
+
+
+# taking flags and options
 while getopts vs:d:DtV: flag
 do
 	case "${flag}" in
-		v) opt=${OPTARG}
+		v) call_function v
 			;;
 		*) echo "FLAGS"
 			;;
@@ -14,9 +35,3 @@ done
 
 
 
-while [[ $key != "q" ]]
-do
-	lsusb
-	read -s -n 1 key
-	clear
-done
