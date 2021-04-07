@@ -1,29 +1,19 @@
 #!/bin/bash
 
-vERBOSE=unset
-sHOW=unset
-Id=unset
-DEVICE=unset
-tREE=unset
-VERSION=unset
+vERBOSE=""
+sHOW=""
+Id=""
+DEVICE=""
+tREE=""
+VERSION=""
 
 
 # calling function
 call_function()
-{
-	# arguments of function
-	opt=$1
-	arg=$2
-	
+{	
 	while [[ $key != "q" ]]
 	do
-		if [[ $arg = "" ]]
-		then
-			lsusb -$opt
-		else
-			lsusb -$opt $arg
-		fi
-
+		lsusb $vERBOSE $sHOW $Id $DEVICE $tREE $VERSION
 		read -s -n 1 key
 		clear
 	done
@@ -31,9 +21,7 @@ call_function()
 
 
 # taking flags and options
-PARSED_ARGUMENTS=$(getopt -a -n lscusb -o vs:d:D:tV --long verbose, tree, version -- "$@")
-eval set -- "$PARSED_ARGUMENTS"
-
+eval set -- `getopt -o vs:d:D:tV -- "$@"`
 while :
 do
 	case "$1" in
@@ -46,4 +34,6 @@ do
 		--)	shift; break ;;
 		*) echo "INVALID FLAG" ;;
 	esac
-done	
+done
+
+call_function
