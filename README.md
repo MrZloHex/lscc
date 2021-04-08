@@ -102,4 +102,5 @@ $ lscusb -t -v
 ```
 
 # Why?
-¯\\(ツ)/¯
+¯\\(ツ)/¯</br>
+Interesting fact: all was written using `vim`
