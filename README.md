@@ -13,6 +13,17 @@ E. g. `ls`, `lsusb`, `lsattr`, `lsmem`.
 
 ## Table of Contents
 
+* [Roadmap](#roadmap)
+* [Description](#description)
+	* [Types of Command](#types-of-commands)
+	* [Requirements](#requirements)
+	* [Cross-reference](#cross-reference-for-standart-commands)
+	* [Manuals](#manuals)
+	* [TUI](#tui)
+* [Deployment](#deployment)
+	* [Installation](#installation)
+	* [Uninstallation](#uninstallation)
+* [Usage](#usage)
 
 
 ## Roadmap
@@ -91,4 +102,4 @@ $ lscusb -t -v
 ```
 
 # Why?
-¯\(ツ)/¯
+¯\\(ツ)/¯
