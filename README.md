@@ -1,14 +1,15 @@
-# Infinitive ls.. commands
+# **L**i**s**t commands **c**ollection
 
 ## Description
 
-This the collection of ls - functions based installed in Manjaro.
-There is only non-tui version of it now, but later will be and tui version of it.
-All commands are the same as standart but have letter C after ls.
-E.g. lsc | lscusb | lscirq | lscipc
-Well Use!
+### What is *lsc*?
 
-Functions have manpages!
+**lsc** is a improved version of some `ls` commands. E. g. `ls`, `lsusb`, `lsattr`, `lsmem`. 
+
+### What for?
+
+`lsc` is made for optimization of monitoring lists of system information with *manual/auto* updating.
+
 
 ## Installation
 
@@ -29,5 +30,4 @@ lsc
 lscusb
 lscipc
 lscirq
-
 
