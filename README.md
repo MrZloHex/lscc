@@ -25,29 +25,37 @@ At the moment, was made only *CLI* version. </br>
 *TUI* version will be added later. </br>
 This will be as `top` for *CLI* and as `htop` for *TUI* versions.
 
+### Requirements
+
+- `bash` version **3.2** or up.
+- OS type `linux-gnu`
+
 ### Cross-reference for standart commands
 
-| Standart   | Impoved     |
-| Command    | Command     |
-|:-----------|:------------|
-| ls	     | lsc         |
-| lsattr     | lscattr     |
-| lsblk      | lscblk      |
-| lscpu      | lsccpu      |
-| lsinitcpio | lscinitcpio |
-| lsipc	     | lscipc      |
-| lsirq      | lscirq      |
-| lslocks    | lsclocks    |
-| lslogins   | lsclogins   |
-| lsmem      | lscmem      |
-| lsns       | lscns       |
-| lsusb      | lscusb      |
+| Standart command | Impoved command |
+|:-----------------|:----------------|
+| ls	           | lsc             |
+| lsattr           | lscattr         |
+| lsblk            | lscblk          |
+| lscpu            | lsccpu          |
+| lsinitcpio       | lscinitcpio     |
+| lsipc	           | lscipc          |
+| lsirq            | lscirq          |
+| lslocks          | lsclocks        |
+| lslogins         | lsclogins       |
+| lsmem            | lscmem          |
+| lsns             | lscns           |
+| lsusb            | lscusb          |
 
 ### Manuals
 
 For every command from **lscc** there are a manpage. </br>
 To check manpage run:</br>
 ```bash
-$ man  [lscc]
+$ man [lscc]
 ```
+### TUI
+
+*TUI* version will be implemeted as long flag `--tui`
+
 
