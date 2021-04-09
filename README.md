@@ -104,3 +104,5 @@ $ lscusb -t -v
 # Why?
 ¯\\(ツ)/¯</br>
 Interesting fact: all was written using `vim`
+
+lsusb lsattr
