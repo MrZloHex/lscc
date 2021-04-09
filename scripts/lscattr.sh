@@ -8,14 +8,14 @@ dIRECTORIES=""
 lONG=""
 pROJECT=""
 vGENERATION=""
-
+file=""
 
 # calling function
 call_function()
 {
 	while [[ $key != "q" ]]
 	do
-		lsattr $RECURSION $VERSION $aLL $dIRECTORIES $lONG $pROJECT $vGENERATION
+		lsattr $RECURSION $VERSION $aLL $dIRECTORIES $lONG $pROJECT $vGENERATION $file
 		read -s -n 1 key
 		clear
 	done
@@ -35,7 +35,7 @@ do
 		-p) pROJECT="-p"	; shift   ;;
 		-v) vGENERATION="-v"	; shift   ;;
 		--)	shift ; break ;;
-		* ) echo "smth goes wrong"
+		* ) file="$2"		; shift 2 ;;
 	esac
 done
 
