@@ -34,3 +34,5 @@ do
 		*) echo "INVALID FLAG"
 	esac
 done
+
+call_funciton()
