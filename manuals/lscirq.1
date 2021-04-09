@@ -1,4 +1,3 @@
-.\" lscirq command manpage
 .TH "lscirq" "1" "April 5, 2020" "lscirq"
 .SH NAME
 lscirq - utility to display kernel interrupt information, but it's infinite
@@ -6,7 +5,32 @@ lscirq - utility to display kernel interrupt information, but it's infinite
 .B lscirq
 .RI "[" "OPTION" "]"
 .SH DESCRIPTION
-.R See man of
+.R "Display kernel interrupt counter information."
+.R
+.RB "The default output is subject to change. So whenever possible, you should avoid using default outputs in your scripts. Always explicitly define expected columns by using " "--output" "."
+.SH OPTIONS
+.TP
+.BR "-n" ", " "--noheadings"
+.R "Don't print headings."
+.TP
+.BR "-o" ", "--output \fIlist"
+.RB "Specify which output columns to print.  Use " "--help " "to get a list of all supported columns.  The default list of columns may be extended if list is specified in the format \fI+list\fR."
+.TP
+.BR "-s" ", " "--sort \fIcolumn"
+.RB "Specify sort criteria by column name.  See " "--help " "output to get column names."
+.TP
+.BR "-J" ", " "--json"
+.R "Use JSON output format."
+.TP
+.BR "-P" ", " "--pairs"
+.R "Produce output in the form of key="value" pairs.  All potentially unsafe characters are hex-escaped (\\x<code>)."
+.TP
+.BR "-V" ", " "--version"
+.R "Display version information and exit."
+.TP
+.BR "-h" ", " "--help"
+.R "Display help text and exit."
+.SH SEE ALSO
 .B lsirq
 .SH AUTHOR
-Written by Zlobin A.
+Written by MrZlo <zlo.alex.it@gmail.com>
