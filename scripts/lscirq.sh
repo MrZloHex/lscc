@@ -35,4 +35,4 @@ do
 	esac
 done
 
-call_funciton
+call_function
