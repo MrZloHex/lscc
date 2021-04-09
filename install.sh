@@ -10,7 +10,7 @@
 
 ## INSTALLING COMMANDS
 
-cd ntui/com
+cd scripts
 
 # changing extention
 for f in *.sh
@@ -27,13 +27,14 @@ done
 
 cd ..
 
+rm -rf scripts
 
 
 ## INSTALLING MAN PAGES
 
 sudo mkdir /usr/local/man/man1
 
-cd man
+cd manuals
 
 for f in *
 do
@@ -44,9 +45,8 @@ done
 sudo mandb
 
 cd ..
-cd ..
 
-rm -rf ntui
+rm -rf manuals
 
 
 echo "DONE!"
