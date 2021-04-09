@@ -1,4 +1,3 @@
-.\" lscattr mapage
 .TH "lscattr" "1" "April 5, 2020" "lscattr"
 .SH NAME
 lscattr - list file attributes on a Linux second extended file system, but it's infinite
@@ -7,10 +6,30 @@ lscattr - list file attributes on a Linux second extended file system, but it's 
 .RB "[" " -RVadlpv " "] ["
 .IR " files..." "]"
 .SH DESCRIPTION
-.R See man of
-.B lsattr
+.BR "lsattr" " lists the file attributes on a second extended file system.  See " "chattr" "(1) for a description of the attributes and what they mean."
 .SH OPTIONS
-.BR "-R\t" "Recursively list attributes of directories and their contents."
+.TP
+.B "-R"
+.R "Recursively list attributes of directories and their contents."
+.TP
+.B "-V"
+.R "Display the program version."
+.TP
+.B "-a"
+.R "List all files in directories, including files that start with `.'."
+.TP
+.B "-d"
+.R "List directories like other files, rather than listing their contents."
+.TP
+.B "-l"
+.R "Print the options using long names instead of single character abbreviations."
+.TP
+.B "-p"
+.R "List the file's project number."
+.TP
+.B "-v"
+.R "List the file's version/generation number."
+.SH SEE ALSO
+.B lsattr
 .SH AUTHOR
-Written by Zlobin A.
-
+Written by MrZlo <zlo.alex.it@gmail.com>
