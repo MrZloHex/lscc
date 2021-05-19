@@ -8,5 +8,50 @@ lscns - list namespaces, but it's infinite
 .SH DESCRIPTION
 .R See man of
 .B lsns
+.SH OPTIONS
+.TP
+.BR \-J , " \-\-json"
+Use JSON output format.
+.TP
+.BR \-l , " \-\-list"
+Use list output format.
+.TP
+.BR \-n , " \-\-noheadings"
+Do not print a header line.
+.TP
+.BR \-o , " \-\-output " \fIlist\fP
+Specify which output columns to print.  Use \fB\-\-help\fR
+to get a list of all supported columns.
+
+The default list of columns may be extended if \fIlist\fP is
+specified in the format \fB+\fIlist\fP (e.g., \fBlsns \-o +PATH\fP).
+.TP
+.BR \-O , "\-\-output\-all"
+Output all available columns.
+.TP
+.BR \-p , " \-\-task " \fIpid\fP
+Display only the namespaces held by the process with this \fIpid\fR.
+.TP
+.BR \-r , " \-\-raw"
+Use the raw output format.
+.TP
+.BR \-t , " \-\-type " \fItype\fP
+Display the specified \fItype\fP of namespaces only.  The supported types are
+\fBmnt\fP, \fBnet\fP, \fBipc\fP, \fBuser\fP, \fBpid\fP, \fButs\fP,
+\fBcgroup\fP and \fBtime\fP.  This option may be given more than once.
+.TP
+.BR \-u , " \-\-notruncate"
+Do not truncate text in columns.
+.TP
+.BR \-W , " \-\-nowrap"
+Do not use multi-line text in columns.
+.TP
+.BR \-V , " \-\-version"
+Display version information and exit.
+.TP
+.BR \-h , " \-\-help"
+Display help text and exit.
+.SH SEE ALSO
+lsns
 .SH AUTHOR
 Written by Zlobin A.
