@@ -105,4 +105,4 @@ $ lscusb -t -v
 ¯\\(ツ)/¯</br>
 Interesting fact: all was written using `vim`
 
-lsusb lsattr lsirq lsns
+lsusb lsattr lsirq lsns lsmem
