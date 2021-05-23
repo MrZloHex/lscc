@@ -96,7 +96,7 @@ $ man [lscc]
 
 ## Usage 
 
-All commands work as standart. All is the same. E.g.:</br>
+All commands work as standart. All is the samWe. E.g.:</br>
 ```bash
 $ lscusb -t -v
 ```

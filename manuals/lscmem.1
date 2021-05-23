@@ -8,5 +8,59 @@ lscmem - list the ranges of available memory with their online status, but it's 
 .SH DESCRIPTION
 .R See man of
 .B lsmem
+.SH OPTIONS
+.TP
+.BR \-a ", " \-\-all
+List each individual memory block, instead of combining memory blocks with
+similar attributes.
+.TP
+.BR \-b , " \-\-bytes"
+Print the SIZE column in bytes rather than in a human-readable format.
+.TP
+.BR \-h ", " \-\-help
+Display help text and exit.
+.TP
+.BR \-J , " \-\-json"
+Use JSON output format.
+.TP
+.BR \-n , " \-\-noheadings"
+Do not print a header line.
+.TP
+.BR \-o , " \-\-output " \fIlist\fP
+Specify which output columns to print.  Use \fB\-\-help\fR
+to get a list of all supported columns.
+The default list of columns may be extended if \fIlist\fP is
+specified in the format \fB+\fIlist\fP (e.g., \fBlsmem \-o +NODE\fP).
+.TP
+.B \-\-output\-all
+Output all available columns.
+.TP
+.BR \-P , " \-\-pairs"
+Produce output in the form of key="value" pairs.
+All potentially unsafe characters are hex-escaped (\\x<code>).
+.TP
+.BR \-r , " \-\-raw"
+Produce output in raw format.  All potentially unsafe characters are hex-escaped
+(\\x<code>).
+.TP
+.BR \-S , " \-\-split " \fIlist\fP
+Specify which columns (attributes) use to split memory blocks to ranges.  The
+supported columns are STATE, REMOVABLE, NODE and ZONES, or "none".
+The other columns are
+silently ignored. For more details see DESCRIPTION above.
+.TP
+.BR \-s , " \-\-sysroot " \fIdirectory\fP
+Gather memory data for a Linux instance other than the instance from which the
+\fBlsmem\fP command is issued.  The specified \fIdirectory\fP is the system
+root of the Linux instance to be inspected.
+.TP
+.BR \-V ", " \-\-version
+Display version information and exit.
+.TP
+\fB\-\-summary\fR[=\fIwhen\fR]
+This option controls summary lines output.  The optional argument \fIwhen\fP can be
+\fBnever\fR, \fBalways\fR or \fBonly\fR.  If the \fIwhen\fR argument is
+omitted, it defaults to \fB"only"\fR. The summary output is suppressed for
+\fB\-\-raw\fR, \fB\-\-pairs\fR and \fB\-\-json\fR.
 .SH AUTHOR
 Written by Zlobin A.

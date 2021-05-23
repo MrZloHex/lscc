@@ -26,10 +26,10 @@ while :
 do
 	case "$1" in
 		-v | --verbose) vERBOSE="-v"	; shift   ;;
-		-s)		sHOW="-s $2"	; shift 2 ;;
-		-d) 		Id="-d $2" 	; shift 2 ;;
-		-D) 		DEVICE="-D $2"	; shift 2 ;;
-		-t | --tree )	tREE="-t"	; shift   ;;
+		-s)		sHOW="-s $2"			; shift 2 ;;
+		-d) 		Id="-d $2" 			; shift 2 ;;
+		-D) 		DEVICE="-D $2"		; shift 2 ;;
+		-t | --tree )	tREE="-t"		; shift   ;;
 		-V | --version)	VERSION="-V"	; shift   ;;
 		--)	shift; break ;;
 		*) echo "INVALID FLAG" ;;
