@@ -1,5 +1,7 @@
 # List Commands Collection
 
+IT IS JUST PRACTISE OF USING SHELL SCRIPTS
+
 ## LSCC
 
 ### What is **lscc**?
